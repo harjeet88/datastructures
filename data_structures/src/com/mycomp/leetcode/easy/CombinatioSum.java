@@ -22,8 +22,10 @@ public class CombinatioSum {
 	]
 	 */
 	public static void main(String[] args) {
-		int[] input = {2, 3, 6, 7};
-		int target=7;
+		//int[] input = {2, 3, 6, 7};
+		//int target=;
+		int[] input= {10, 1, 2, 7, 6, 1, 5};
+		int target=5;
 		
 		if( input == null || input.length == 0) {
 			System.out.println("Invalid Input ");

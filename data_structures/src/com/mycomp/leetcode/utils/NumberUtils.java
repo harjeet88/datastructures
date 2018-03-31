@@ -25,8 +25,11 @@ public class NumberUtils {
 		}
 	}
 	
+	
+	
 	public static void main(String[] args) {
-		System.out.println(getCombinations(5, 2));
+		//System.out.println(getCombinations(5, 2));
+		print2dArray(new int[5][5]);
 		
 	}
 	public static void printArray(int[] m) {
@@ -34,5 +37,37 @@ public class NumberUtils {
 			System.out.print(m[i]);
 			System.out.print(" ,");
 		}
+	}
+	
+	public static void print2dArray(int[][] m) {
+		System.out.println("[");
+		for(int i=0;i<m.length;i++) {
+			System.out.print("[ ");
+			for(int j=0; j<m[i].length;j++) {
+				System.out.print(m[i][j]+" ");
+			}
+			System.out.println(" ] ");
+		}
+		System.out.println(" ] ");
+	}
+	
+	public static void print2dBooleanArray(boolean[][] m) {
+		System.out.println("[");
+		for(int i=0;i<m.length;i++) {
+			System.out.print("[ ");
+			for(int j=0; j<m[i].length;j++) {
+				System.out.print(m[i][j]+" ");
+			}
+			System.out.println(" ] ");
+		}
+		System.out.println(" ] ");
+	}
+
+	public static void printCharArray(char[] results) {
+		System.out.print("[");
+		for (int i = 0; i < results.length; i++) {
+			System.out.print(results[i]+" , ");
+		}
+		System.out.println("]");
 	}
 }
